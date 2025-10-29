@@ -116,8 +116,8 @@ footer {
 }
 
 .contact-btn:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #bfbfbf;
+  transform: scale(1.05);
 }
 
 /* Responsive design */
