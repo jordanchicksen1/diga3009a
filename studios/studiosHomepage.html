@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studios</title>
+  <link rel="stylesheet" href="studioHomepage.css">
 </head>
 <body>
-    
+  <div class="studios-container">
+    <!-- Navbar -->
+    <div class="top-nav">
+      <div class="nav-dots">
+        <a href="games.html" class="dot"></a>
+        <a href="studios.html" class="dot active"></a>
+        <a href="timeline.html" class="dot"></a>
+        <a href="contact.html" class="dot"></a>
+      </div>
+    </div>
+
+    <!-- Page Title -->
+    <h1>Studios</h1>
+
+    <!-- Studios Grid -->
+    <div class="studios-grid">
+      <a href="../studios/nyamakopPage.html" class="studio-btn"><img src="../images/nyamakop.jpg" alt="Nyamakop"></a>
+      <a href="../studios/talentArtDigitalPage.html" class="studio-btn"><img src="../images/talentDigital.jpg" alt="Talent Art Digital"></a>
+      <a href="../studios/" class="studio-btn"><img src="placeholder3.jpg" alt="Studio 3"></a>
+      <a href="studio4.html" class="studio-btn"><img src="placeholder4.jpg" alt="Studio 4"></a>
+      <a href="studio5.html" class="studio-btn"><img src="placeholder5.jpg" alt="Studio 5"></a>
+      <a href="studio6.html" class="studio-btn"><img src="placeholder6.jpg" alt="Studio 6"></a>
+      <a href="studio7.html" class="studio-btn"><img src="placeholder7.jpg" alt="Studio 7"></a>
+      <a href="studio8.html" class="studio-btn"><img src="placeholder8.jpg" alt="Studio 8"></a>
+      <a href="studio9.html" class="studio-btn"><img src="placeholder9.jpg" alt="Studio 9"></a>
+      <a href="studio10.html" class="studio-btn"><img src="placeholder10.jpg" alt="Studio 10"></a>
+      <a href="studio11.html" class="studio-btn"><img src="placeholder11.jpg" alt="Studio 11"></a>
+      <a href="studio12.html" class="studio-btn"><img src="placeholder12.jpg" alt="Studio 12"></a>
+    </div>
+
+    <!-- Scroll Arrow -->
+    <div class="scroll-arrow" id="scrollArrow">▼</div>
+  </div>
+
+  <script>
+    const arrow = document.getElementById('scrollArrow');
+
+    function checkScroll() {
+      const scrollTop = window.scrollY;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const windowHeight = window.innerHeight;
+
+      if (scrollTop + windowHeight < scrollHeight - 10) {
+        // Can scroll down
+        arrow.style.display = 'block';
+        arrow.textContent = '▼';
+        arrow.onclick = () => window.scrollBy({ top: windowHeight, behavior: 'smooth' });
+      } else if (scrollTop > 10) {
+        // Can scroll up
+        arrow.style.display = 'block';
+        arrow.textContent = '▲';
+        arrow.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        // Hide arrow if at the very top and no scroll down possible
+        arrow.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('load', checkScroll);
+  </script>
 </body>
 </html>
