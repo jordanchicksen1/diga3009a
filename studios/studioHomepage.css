@@ -22,35 +22,48 @@ body {
 
 /* Navbar dots */
 .top-nav {
-  position: absolute;
-  top: 15px;
-  right: 20px;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
 }
 
 .nav-dots {
   background-color: #fff;
-  border-radius: 20px;
-  padding: 5px 8px;
+  border-radius: 30px;
+  padding: 10px 15px;
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .dot {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
+  min-width: 70px;
+  height: 35px;
+  border-radius: 20px;
   background-color: #ccc;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  text-decoration: none; /* if they're links */
 }
 
 .dot:hover {
   background-color: #999;
+  transform: scale(1.05);
 }
 
 .dot.active {
   background-color: #000;
+  color: #fff;
 }
+
 
 /* Page Title */
 h1 {
@@ -63,30 +76,38 @@ h1 {
 /* Studios Grid */
 .studios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   justify-items: center;
-  padding-bottom: 60px;
+  align-items: center;
 }
 
 .studio-btn {
-  background-color: #2b2b2b;
-  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;
+  border: none;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .studio-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .studio-btn img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
+  object-fit: contain; /* keeps the full logo visible */
+  background-color: #333; /* fills in behind transparent logos */
+  padding: 10px; /* gives logos a bit of breathing room */
+  border-radius: 20px;
 }
 
 /* Scroll Arrow */
