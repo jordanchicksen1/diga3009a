@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semblance</title>
+  <link rel="stylesheet" href="gamePages.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Semblance</h1>
+
+    <!-- Navbar -->
+    <div class="top-nav">
+  <div class="nav-dots">
+    <a href="../index.html" class="dot">Home</a>
+    <a href="../studios/studiosHomepage.html" class="dot">Studios</a>
+    <a href="../games/gamesHomepage.html" class="dot active">Games</a>
+    <a href="../contact/contactPage.html" class="dot">Contact</a>
+  </div>
+</div>
+
+    <!-- Main content -->
+    <div class="game-card">
+      <!-- Image section -->
+      <div class="image-gallery">
+  <video class="game-video" controls>
+    <source src="../videos/Semblance Official Release Trailer.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Shape yourself and the world around you!</h2>
+  <p>
+    <em>Semblance</em> (2018) is a puzzle platformer where players take the role of a blob-like creature that can deform the platforms around them by jumping into them. Players must shape their environment to get to the end of each level. There are 4 different biomes that players can explore in the game.
+  </p>
+
+  <div class="small-img-grid">
+    <img src ="../images/semblance1.jpg" class="small-img" alt="Semblance Screenshot 1">
+    <img src="../images/semblance2.png" class="small-img" alt="Semblance Screenshot 2">
+    <img src="../images/semblance3.jpg" class="small-img" alt="Semblance Screenshot 3">
+    <img src="../images/semblance4.jpg" class="small-img"alt="Semblance Screenshot 4" >
+  </div>
+</div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="caption"></div>
+
+  <!-- Navigation arrows -->
+  <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+
+</div>
+
+
+      <!-- Game info section -->
+      <div class="game-info">
+        
+
+        <!-- Developer section with logo -->
+        <div class="developer-section">
+          <div class="developer-logo"><img src="../images/nyamakop.jpg" alt = "Nyamako logo" class = "developer-logo"></div>
+          <div class="developer-text">
+            <h3>Developed by Nyamakop</h3>
+            <p>
+              Based in Rosebank, Johannesburg. Comprised of South Africans from across the country, with many coming from the University of the Witwatersrand.
+              Click <a href="../studios/nyamakopPage.html">here</a> to see more by them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">▼</div>
+
+  <script src="scrollArrow.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+</html>

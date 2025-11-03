@@ -35,6 +35,8 @@
       <a href="../games/upupaBirdNinja.html" class="studio-btn"><img src="../images/upupaBirdNinja.jpg" alt="Upupa Bird Ninja"></a>
       <a href="../games/superDiskiFc.html" class="studio-btn"><img src="../images/superDiskiFC.png" alt="Super Diski FC"></a>
       <a href="../games/skyIsles.html" class="studio-btn"><img src="../images/skyIsles.png" alt="Sky Isles"></a>
+
+      
     </div>
 
     <!-- Scroll Arrow -->
@@ -42,31 +44,41 @@
   </div>
 
   <script>
-    const arrow = document.getElementById('scrollArrow');
+  const arrow = document.getElementById('scrollArrow');
 
-    function checkScroll() {
-      const scrollTop = window.scrollY;
-      const scrollHeight = document.documentElement.scrollHeight;
-      const windowHeight = window.innerHeight;
+  function checkScroll() {
+    const scrollTop = window.scrollY;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const windowHeight = window.innerHeight;
 
-      if (scrollTop + windowHeight < scrollHeight - 10) {
-        // Can scroll down
-        arrow.style.display = 'block';
-        arrow.textContent = '▼';
-        arrow.onclick = () => window.scrollBy({ top: windowHeight, behavior: 'smooth' });
-      } else if (scrollTop > 10) {
-        // Can scroll up
-        arrow.style.display = 'block';
-        arrow.textContent = '▲';
-        arrow.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        // Hide arrow if at the very top and no scroll down possible
-        arrow.style.display = 'none';
-      }
+    // If content fits on one screen, hide the arrow entirely
+    if (scrollHeight <= windowHeight + 5) {
+      arrow.style.display = 'none';
+      return;
     }
 
-    window.addEventListener('scroll', checkScroll);
-    window.addEventListener('load', checkScroll);
-  </script>
+    // If user can scroll down
+    if (scrollTop + windowHeight < scrollHeight - 10) {
+      arrow.style.display = 'block';
+      arrow.textContent = '▼';
+      arrow.onclick = () =>
+        window.scrollBy({ top: windowHeight, behavior: 'smooth' });
+    }
+    // If user can scroll up
+    else if (scrollTop > 10) {
+      arrow.style.display = 'block';
+      arrow.textContent = '▲';
+      arrow.onclick = () =>
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      arrow.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  window.addEventListener('load', checkScroll);
+  window.addEventListener('resize', checkScroll);
+</script>
+
 </body>
 </html>
