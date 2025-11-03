@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra Nil</title>
+  <link rel="stylesheet" href="gamePages.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Terra Nil</h1>
+
+    <!-- Navbar -->
+    <div class="top-nav">
+  <div class="nav-dots">
+    <a href="../index.html" class="dot">Home</a>
+    <a href="../studios/studiosHomepage.html" class="dot">Studios</a>
+    <a href="../games/gamesHomepage.html" class="dot active">Games</a>
+    <a href="../contact/contactPage.html" class="dot">Contact</a>
+  </div>
+</div>
+
+    <!-- Main content -->
+    <div class="game-card">
+      <!-- Image section -->
+      <div class="image-gallery">
+  <video class="game-video" controls>
+    <source src="../videos/Terra Nil - Gameplay Trailer  Wholesome Direct 2022.mp4" alt ="Terra Nil trailer" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Bring life back to the land.</h2>
+  <p>
+    <em>Terra Nil</em> (2023) is an environmental strategy game where players must utilize tools and resources to bring life back to a barren land. Clean oceans, purify soil, plant trees and reintroduce wildlife to make it as if you were never even there.
+  </p>
+
+  <div class="small-img-grid">
+    <img src ="../images/terraNil1.jpg" class="small-img" alt="Terra Nil Screenshot 1">
+    <img src="../images/terraNil2.jpg" class="small-img" alt="Terra Nil Screenshot 2">
+    <img src="../images/terraNil3New.jpg" class="small-img" alt="Terra Nil Screenshot 3">
+    <img src="../images/terraNil4.jpg" class="small-img"alt="Terra Nil Screenshot 4" >
+  </div>
+</div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="caption"></div>
+
+  <!-- Navigation arrows -->
+  <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+
+</div>
+
+
+      <!-- Game info section -->
+      <div class="game-info">
+        
+
+        <!-- Developer section with logo -->
+        <div class="developer-section">
+          <div class="developer-logo"><img src="../images/freeLives.jpg" alt = "Free Lives logo" class = "developer-logo"></div>
+          <div class="developer-text">
+            <h3>Developed by Free Lives</h3>
+            <p>
+              Based in Constantia, Cape Town. Comprised of South Africans from across the country, however, most of them are Capetonians.
+              Click <a href="../studios/freeLivesPage.html">here</a> to see more by them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">▼</div>
+
+  <script src="scrollArrow.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+</html>
