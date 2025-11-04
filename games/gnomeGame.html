@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gnome Game</title>
+  <link rel="stylesheet" href="gamePages.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Gnome Game</h1>
+
+    <!-- Navbar -->
+    <div class="top-nav">
+  <div class="nav-dots">
+    <a href="../index.html" class="dot">Home</a>
+    <a href="../studios/studiosHomepage.html" class="dot">Studios</a>
+    <a href="../games/gamesHomepage.html" class="dot active">Games</a>
+    <a href="../contact/contactPage.html" class="dot">Contact</a>
+  </div>
+</div>
+
+    <!-- Main content -->
+    <div class="game-card">
+      <!-- Image section -->
+      <div class="image-gallery">
+  <video class="game-video" controls>
+    <source src="../videos/Gnome Game Gameplay.mp4" alt = "Gnome Game Trailer" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>DESTROY THE H&M!</h2>
+  <p>
+    <em>Gnome Game</em> (2024) is an expressive platforming roguelike where players must bring life back to a barren world. By platforming in the space, players will plant seeds and grow greenery. After each run, players can upgrade their character's stats to make each run more effective than the last.
+  </p>
+
+  <div class="info-block">
+    <p class="info-table"><b>Release status:</b> released</p>
+    <p class="info-table"><b>Release year:</b> 2024</p>
+    <p class="info-table"><b>Genre:</b> Action</p>
+    <p class="info-table"><b>Store page:</b> <a href="https://therealeric.itch.io/gnome-gnome">Itch</a></p>
+  </div>
+  
+
+  <div class="small-img-grid">
+    <img src ="../images/gnomeGame1.png" class="small-img" alt="Gnome Game Screenshot 1">
+    <img src="../images/gnomeGame2.png" class="small-img" alt="Gnome Game Screenshot 2">
+    <img src="../images/gnomeGame3.png" class="small-img" alt="Gnome Game Screenshot 3">
+    <img src="../images/gnomeGame4.png" class="small-img"alt="Gnome Game Screenshot 4" >
+  </div>
+</div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="caption"></div>
+
+  <!-- Navigation arrows -->
+  <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+
+</div>
+
+
+      <!-- Game info section -->
+      <div class="game-info">
+        
+
+        <!-- Developer section with logo -->
+        <div class="developer-section">
+          <div class="developer-logo"><img src="../images/vetkoekNew.png" alt = "Vetkoek Studios logo" class = "developer-logo"></div>
+          <div class="developer-text">
+            <h3>Developed by Vetkoek Studios</h3>
+            <p>
+              Based in Rosebank, Johannesburg. Much like Nyamakop, this studio is comprised of South Africans from across the country, with many coming from the University of the Witwatersrand.
+              Click <a href="../studios/vetkoekStudios.html">here</a> to see more by them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">▼</div>
+
+  <script src="scrollArrow.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+</html>
