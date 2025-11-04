@@ -328,3 +328,18 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   color: #bbb;
 }
 
+.info-table {
+  position: relative;       /* reset from default */
+  left: 0;                  /* anchor to the left */
+  align-self: flex-start;   /* move the block itself to the left in flexbox */
+  text-align: left;         /* align text inside to the left */
+  width: fit-content;       /* only as wide as the content */
+  margin-left: 0;           /* ensure no unwanted indentation */
+}
+
+.info-block {
+  width: 100%;         /* change as desired */
+  text-align: left;
+  margin-inline-start: 0em;
+  margin-inline-end: 0em;
+}
