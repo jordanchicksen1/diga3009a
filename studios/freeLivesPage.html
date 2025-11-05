@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talent Digital Art</title>
+  <link rel="stylesheet" href="../games/gamePages.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Talent Digital Art</h1>
+
+    <!-- Navbar -->
+    <div class="top-nav">
+      <div class="nav-dots">
+        <a href="../index.html" class="dot">Home</a>
+        <a href="../studios/studiosHomepage.html" class="dot active">Studios</a>
+        <a href="../games/gamesHomepage.html" class="dot">Games</a>
+        <a href="../contact/contactPage.html" class="dot">Contact</a>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="game-card">
+      <!-- Image section -->
+      <div class="image-gallery">
+        <img src="../images/talentDigitalArtTeam.jpg" alt="Talent Digital Art Team" class="team-img">
+
+        <h2>Your imagination realized.</h2>
+        <p>
+          Based in Midrand, Johannesburg. This is an intricate team of skilled individuals that produce striking works. This team is quite interesting, as they are a subsidiary of Talent10 Holdings, which has ties to Mining, Energy, ICT, Insurance, Film, Games and Engineering sectors.
+        </p>
+
+        <!-- Info block -->
+        <div class="info-block">
+          <p class="info-table"><b>Location:</b> Midrand, Johannesburg</p>
+          <p class="info-table"><b>Founded:</b> 2021</p>
+          <p class="info-table"><b>Speciality:</b> 3D Games</p>
+          <p class="info-table"><b>Notable works:</b> Super Dragon Punch Force 3, Pecking Order, The Evils, Game Noir</p>
+          <p class="info-table"><b>Website:</b> <a href="https://www.talentdigital.art/">Talent Digital Art</a></p>
+        </div>
+
+        <!-- Linked games -->
+        <div class="small-img-grid">
+          <a href="../games/superDragonPunchForce3.html">
+            <img src="../images/dragonPunch.jpg" alt="Super Dragon Punch Force 3 Key Art" class = "gamePic">
+          </a>
+          <a href="../games/peckingOrder.html">
+            <img src="../images/peckingOrder.jpg" alt="Pecking Order Art" class = "gamePic">
+          </a>
+        </div>
+      </div>
+
+      <!-- Lightbox overlay -->
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">▼</div>
+
+  <!-- Use same JS as your game pages -->
+  <script src="../games/scrollArrow.js"></script>
+  <script src="../games/lightbox.js"></script>
+</body>
+</html>
