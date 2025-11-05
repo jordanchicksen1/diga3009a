@@ -5,7 +5,8 @@ const close = document.querySelector(".close");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 
-const images = Array.from(document.querySelectorAll(".small-img"));
+const images = Array.from(document.querySelectorAll(".small-img, .team-img"));
+
 let currentIndex = 0;
 
 function showImage(index) {
