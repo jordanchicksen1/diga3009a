@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3a3a3a; /* same dark grey as other pages */
+  font-family: Arial, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.studio-card {
+  background-color: white;
+  border-radius: 30px;
+  padding: 40px;
+  margin: 60px 20px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.studio-image {
+  width: 70%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.studio-subheading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.studio-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+}
+
+.studio-games {
+ 
+  padding-left: 5%;
+  max-width: 80%;
+  display: flex;
+  justify-content: left;
+  gap: 25px;
+}
+
+.game-button {
+  width: 140px;
+  height: 100px;
+  border-radius: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.game-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .studio-card {
+    padding: 25px;
+  }
+
+  .studio-image {
+    width: 90%;
+  }
+
+  .game-button {
+    width: 110px;
+  }
+}
+
+/* Navbar */
+.top-nav {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  z-index: 100;
+}
+
+.nav-dots {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dot {
+  min-width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ccc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  text-decoration: none; /* if they're links */
+  left: 90%
+}
+
+.dot:hover {
+  background-color: #999;
+}
+
+.dot.active {
+  background-color: #000;
+  color: #fff;
+}
