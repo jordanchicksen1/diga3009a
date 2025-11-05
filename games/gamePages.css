@@ -130,6 +130,15 @@ body {
   align-items: center;
 }
 
+.gamePic {
+  width: 100%;
+  height: 125px;
+  border-radius: 15px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .small-img:hover{
 transform: scale(1.08);
@@ -140,6 +149,12 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 transform: scale(1.08);
 box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
+
+.gamePic:hover{
+transform: scale(1.08);
+box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
 
 /* Developer section */
 .developer-section {
