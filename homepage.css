@@ -17,6 +17,10 @@ body {
   text-align: center;
 }
 
+.outer-text{
+  color: #fff;
+}
+
 /* Header */
 h1 {
   color: #fff;
