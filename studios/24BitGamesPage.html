@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24Bit Games</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>24Bit Games</title>
+  <link rel="stylesheet" href="../games/gamePages.css" />
 </head>
 <body>
-    
+  <div class="container">
+    <h1 class="title">24Bit Games</h1>
+
+ 
+    <div class="top-nav">
+      <div class="nav-dots">
+        <a href="../index.html" class="dot">Home</a>
+        <a href="../studios/studiosHomepage.html" class="dot active">Studios</a>
+        <a href="../games/gamesHomepage.html" class="dot">Games</a>
+        <a href="../contact/contactPage.html" class="dot">Contact</a>
+      </div>
+    </div>
+
+  
+    <div class="game-card">
+  
+      <div class="image-gallery">
+        <img src="../images/24bitTeam.jpg" alt="24Bit Games Team" class="team-img">
+
+        <h2>Engineering critical hits.</h2>
+        <p>
+        Acquired by Annapurna Interactive, this studio focuses on porting games from PC to consoles, optimizing games to reach the best performance possible, and even co-developing games with other studios. Due to this, they have had a hand in producing some of the most interesting games of the 2010s and 2020s, and the most well known "South African" games.
+        </p>
+
+   
+        <div class="info-block">
+          <p class="info-table"><b>Location:</b> Befordview, Johannesburg</p>
+          <p class="info-table"><b>Founded:</b> 2012</p>
+          <p class="info-table"><b>Speciality:</b> Bring games to new platforms</p>
+          <p class="info-table"><b>Notable works:</b> Cocoon, Neon White, Gorn, Bro Force, Totally Accurate Battle Simulator, Gone Home</p>
+          <p class="info-table"><b>Website:</b> <a href="https://24bitgames.com/">24Bit Games</a></p>
+        </div>
+
+      
+        <div class="small-img-grid">
+          <a href="../games/cocoon.html">
+            <img src="../images/cocoon.jpg" alt="Cocoon Key Art" class = "gamePic">
+          </a>
+          <a href="../games/neonWhite.html">
+            <img src="../images/neonWhite.jpg" alt="Neon White Key Art" class = "gamePic">
+          </a>
+        </div>
+      </div>
+
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scroll-arrow" id="scroll-arrow">▼</div>
+
+  
+  <script src="../games/scrollArrow.js"></script>
+  <script src="../games/lightbox.js"></script>
 </body>
 </html>

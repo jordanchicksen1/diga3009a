@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clockwork Acorn</title>
+  <link rel="stylesheet" href="../games/gamePages.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Clockwork Acorn</h1>
+
+    <!-- Navbar -->
+    <div class="top-nav">
+      <div class="nav-dots">
+        <a href="../index.html" class="dot">Home</a>
+        <a href="../studios/studiosHomepage.html" class="dot active">Studios</a>
+        <a href="../games/gamesHomepage.html" class="dot">Games</a>
+        <a href="../contact/contactPage.html" class="dot">Contact</a>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="game-card">
+      <!-- Image section -->
+      <div class="image-gallery">
+        <img src="../images/clockworkAcornTeam.jpg" alt="Clockwork Acorn Team" class="team-img">
+
+        <h2>Connection through the digital realm.</h2>
+        <p>
+        This studio focuses on creating endlessly replyable, arcade-style mobile games that are immediately intuitive. However, much like other South African developers, they like to encorporate South African themes and aesthetics into their games. In a sense, they digitize South African culture. 
+        </p>
+
+        <!-- Info block -->
+        <div class="info-block">
+          <p class="info-table"><b>Location:</b> Stellenbosch, Cape Town</p>
+          <p class="info-table"><b>Founded:</b> 2014</p>
+          <p class="info-table"><b>Speciality:</b> 2D games</p>
+          <p class="info-table"><b>Notable works:</b> Upupa Bird Ninja, Jetstream, Terra Nil </p>
+          <p class="info-table"><b>Website:</b> <a href="https://clockworkacorn.com/">Clockwork Acorn</a></p>
+        </div>
+
+        <!-- Linked games -->
+        <div class="small-img-grid">
+          <a href="../games/upupaBirdNinja.html">
+            <img src="../images/upupaBirdNinja.jpg" alt="Upupa Bird Ninja Key Art" class = "gamePic">
+          </a>
+        
+        </div>
+      </div>
+
+      <!-- Lightbox overlay -->
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">▼</div>
+
+  <!-- Use same JS as your game pages -->
+  <script src="../games/scrollArrow.js"></script>
+  <script src="../games/lightbox.js"></script>
+</body>
+</html>
