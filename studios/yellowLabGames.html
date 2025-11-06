@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yellow Lab Games</title>
+  <link rel="stylesheet" href="../games/gamePages.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Yellow Lab Games</h1>
+
+    <!-- Navbar -->
+    <div class="top-nav">
+      <div class="nav-dots">
+        <a href="../index.html" class="dot">Home</a>
+        <a href="../studios/studiosHomepage.html" class="dot active">Studios</a>
+        <a href="../games/gamesHomepage.html" class="dot">Games</a>
+        <a href="../timeline/timelinePage.html" class="dot">Timeline</a>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="game-card">
+      <!-- Image section -->
+      <div class="image-gallery">
+        <img src="../images/yellowLabTeam2.png" alt="Yellow Lab Games Team" class="team-img">
+
+        <h2>Chaotic harmony!</h2>
+        <p>
+          Acquired by Reforged Studios in 2024, this studio has produced an interesting take on the idea of a "music game", in the sense thattheir game has a keen focus on music and encorporates music into the game mechanics, but it is not a rhythym game. This displays the studio's keen ability to subvert expectations whilst still delivering an impactful experience.
+        </p>
+
+        <!-- Info block -->
+        <div class="info-block">
+          <p class="info-table"><b>Location:</b> Cape Town, South Africa</p>
+          <p class="info-table"><b>Founded:</b> 2024</p>
+          <p class="info-table"><b>Speciality:</b> Music based action games</p>
+          <p class="info-table"><b>Notable works:</b> Metavoidal </p>
+          <p class="info-table"><b>Website:</b> <a href="https://yellowlab.games/"> Yellow Lab Games</a></p>
+        </div>
+
+        <!-- Linked games -->
+        <div class="small-img-grid">
+          <a href="../games/metavoidal.html">
+            <img src="../images/metavoidal.jpg" alt="Metavoidal Key Art" class = "gamePic">
+          </a>
+        
+        </div>
+      </div>
+
+      <!-- Lightbox overlay -->
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">▼</div>
+
+  <!-- Use same JS as your game pages -->
+  <script src="../games/scrollArrow.js"></script>
+  <script src="../games/lightbox.js"></script>
+</body>
+</html>
