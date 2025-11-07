@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #3a3a3a; /* same dark grey as other pages */
+  background-color: #333333; /* same dark grey as other pages */
   font-family: Arial, sans-serif;
   color: black;
   display: flex;

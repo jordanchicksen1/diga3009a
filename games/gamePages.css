@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #3a3a3a;
+  background-color: #707070;
   font-family: Arial, sans-serif;
   color: #000;
   display: flex;
@@ -13,7 +13,7 @@ body {
 .container {
   width: 90%;
   max-width: 900px;
-  background-color: #3a3a3a;
+  background-color: #707070;
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;

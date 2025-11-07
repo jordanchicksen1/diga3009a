@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #d9d9d9; /* light grey */
+  background-color: #cccccc; /* light grey */
   font-family: Arial, sans-serif;
   color: #000;
 }
@@ -79,5 +79,85 @@ body {
 
   .timeline-container {
     padding: 10px;
+  }
+}
+
+.top-nav {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.nav-dots {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dot {
+  min-width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ccc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  text-decoration: none; /* if they're links */
+}
+
+.dot:hover {
+  background-color: #999;
+  transform: scale(1.05);
+}
+
+.dot.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  left: 90%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 8px 14px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  background-color: #ddd;
+  transform: translateX(-50%) scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .studios-grid {
+    gap: 15px;
   }
 }
