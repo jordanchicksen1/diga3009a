@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar
+
   gsap.from(".top-nav", {
     y: -50,
     opacity: 0,
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Title
+
   gsap.from("h1", {
     opacity: 0,
     y: 20,
@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Game tiles (fade in, but don't leave a transform)
+  
   gsap.from(".studio-btn", {
-    autoAlpha: 0,     // controls opacity + visibility
-    yPercent: 20,     // temporary vertical movement
+    autoAlpha: 0,     
+    yPercent: 20,     
     duration: 0.8,
     delay: 0.5,
     stagger: {
@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
       from: "center"
     },
     ease: "power3.out",
-    clearProps: "transform" // removes inline transform after animation
+    clearProps: "transform" 
   });
 
-  // Scroll arrow pulse
+  
   gsap.to("#scrollArrow", {
     y: -8,
     repeat: -1,

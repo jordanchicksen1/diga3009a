@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 
-/* Title */
+
 .title {
   text-align: center;
   font-size: 2.5em;
@@ -29,7 +29,6 @@ body {
   margin-top: 0;
 }
 
-/* Navbar */
 .top-nav {
   position: fixed;
   top: 20px;
@@ -60,7 +59,7 @@ body {
   align-items: center;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
-  text-decoration: none; /* if they're links */
+  text-decoration: none; 
   left: 90%
 }
 
@@ -73,7 +72,6 @@ body {
   color: #fff;
 }
 
-/* Game card */
 .game-card {
   background-color: white;
   color: #000;
@@ -82,10 +80,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 80px; /* for scroll space above arrow */
+  margin-bottom: 80px; 
 }
 
-/* Images */
+
 .image-gallery {
   display: flex;
   flex-direction: column;
@@ -156,7 +154,7 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 
-/* Developer section */
+
 .developer-section {
   display: flex;
   align-items: flex-start;

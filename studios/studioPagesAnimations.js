@@ -1,6 +1,6 @@
-// 24bitAnimations.js
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar
+
   gsap.from(".top-nav", {
     y: -40,
     opacity: 0,
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Title
+  
   gsap.from(".title", {
     opacity: 0,
     y: 30,
@@ -17,17 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Team image
+  
   gsap.from(".team-img", {
   opacity: 0,
   scale: 0.95,
   duration: 1,
   delay: 0.6,
   ease: "power2.out",
-  clearProps: "transform" // ← this line ensures hover works again
+  clearProps: "transform" 
 });
 
-  // Heading and paragraph
   gsap.from(".image-gallery h2, .image-gallery p", {
     opacity: 0,
     y: 30,
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Info block
   gsap.from(".info-block", {
     opacity: 0,
     y: 30,
@@ -46,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Small screenshots
+  
   gsap.from(".gamePic", {
     opacity: 0,
     y: 40,
@@ -57,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
     clearProps: "transform"
   });
 
-  // Scroll arrow pulse
   gsap.to("#scroll-arrow", {
     y: -8,
     repeat: -1,

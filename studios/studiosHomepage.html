@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="studios-container">
-    <!-- Navbar -->
+
    <div class="top-nav">
   <div class="nav-dots">
     <a href="../index.html" class="dot">Home</a>
@@ -18,10 +18,9 @@
   </div>
 </div>
 
-    <!-- Page Title -->
+    
     <h1>Studios</h1>
 
-    <!-- Studios Grid -->
     <div class="studios-grid">
       <a href="../studios/nyamakopPage.html" class="studio-btn"><img src="../images/nyamakop.jpg" alt="Nyamakop"></a>
       <a href="../studios/talentArtDigitalPage.html" class="studio-btn"><img src="../images/talentDigital.jpg" alt="Talent Art Digital"></a>
@@ -37,7 +36,6 @@
       <a href="../studios/safeDollarStudiosPage.html" class="studio-btn"><img src="../images/sdsYea.png" alt="Safe Dollar Studios"></a>
     </div>
 
-    <!-- Scroll Arrow -->
     <div class="scroll-arrow" id="scrollArrow">▼</div>
   </div>
 
@@ -50,17 +48,17 @@
       const windowHeight = window.innerHeight;
 
       if (scrollTop + windowHeight < scrollHeight - 10) {
-        // Can scroll down
+       
         arrow.style.display = 'block';
         arrow.textContent = '▼';
         arrow.onclick = () => window.scrollBy({ top: windowHeight, behavior: 'smooth' });
       } else if (scrollTop > 10) {
-        // Can scroll up
+       
         arrow.style.display = 'block';
         arrow.textContent = '▲';
         arrow.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
-        // Hide arrow if at the very top and no scroll down possible
+        
         arrow.style.display = 'none';
       }
     }

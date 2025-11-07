@@ -18,14 +18,14 @@ function showImage(index) {
   lightbox.style.display = "flex";
 }
 
-// Click thumbnail → open lightbox
+
 images.forEach((img, index) => {
   img.addEventListener("click", () => {
     showImage(index);
   });
 });
 
-// Arrows
+
 prev.addEventListener("click", (e) => {
   e.stopPropagation();
   showImage(currentIndex - 1);
@@ -36,19 +36,19 @@ next.addEventListener("click", (e) => {
   showImage(currentIndex + 1);
 });
 
-// Close button
+
 close.addEventListener("click", () => {
   lightbox.style.display = "none";
 });
 
-// Click outside image to close
+
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) {
     lightbox.style.display = "none";
   }
 });
 
-// Keyboard navigation (optional)
+
 document.addEventListener("keydown", (e) => {
   if (lightbox.style.display === "flex") {
     if (e.key === "ArrowLeft") showImage(currentIndex - 1);

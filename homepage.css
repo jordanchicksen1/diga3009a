@@ -1,4 +1,4 @@
-/* Base styles */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #000;
@@ -21,14 +21,12 @@ body {
   color: #fff;
 }
 
-/* Header */
 h1 {
   color: #fff;
   font-size: 1.8rem;
   margin-bottom: 25px;
 }
 
-/* Navigation */
 .nav {
   display: flex;
   justify-content: center;
@@ -52,7 +50,6 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Updates section */
 .updates {
   background-color: #fff;
   border-radius: 25px;
@@ -103,7 +100,6 @@ h1 {
   color: #555;
 }
 
-/* Footer */
 footer {
   margin-top: 30px;
 }
@@ -126,7 +122,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
   .update {
     flex-direction: column;
@@ -148,7 +143,6 @@ footer {
   }
 }
 
-/* Scroll arrow */
 .scroll-arrow {
   position: fixed;
   bottom: 20px;

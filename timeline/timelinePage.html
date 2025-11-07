@@ -8,7 +8,6 @@
 <script src="timelineAnimations.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.16.0/gsap.min.js"></script>
 
-<!-- GSAP ScrollTrigger plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.16.0/ScrollTrigger.min.js"></script>
 
 </head>
@@ -97,7 +96,7 @@
     </section>
 
   </main>
-  <!-- Scroll Arrow -->
+ 
     <div class="scroll-arrow" id="scrollArrow">▼</div>
   
 
@@ -109,20 +108,19 @@
     const scrollHeight = document.documentElement.scrollHeight;
     const windowHeight = window.innerHeight;
 
-    // If content fits on one screen, hide the arrow entirely
     if (scrollHeight <= windowHeight + 5) {
       arrow.style.display = 'none';
       return;
     }
 
-    // If user can scroll down
+
     if (scrollTop + windowHeight < scrollHeight - 10) {
       arrow.style.display = 'block';
       arrow.textContent = '▼';
       arrow.onclick = () =>
         window.scrollBy({ top: windowHeight, behavior: 'smooth' });
     }
-    // If user can scroll up
+   
     else if (scrollTop > 10) {
       arrow.style.display = 'block';
       arrow.textContent = '▲';
@@ -137,12 +135,6 @@
   window.addEventListener('load', checkScroll);
   window.addEventListener('resize', checkScroll);
 </script>
-<!-- GSAP core -->
-
-
-<!-- Your animations -->
-
-
 
 </body>
 </html>

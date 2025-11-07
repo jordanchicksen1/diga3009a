@@ -1,6 +1,6 @@
-// relootedAnimations.js
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar
+ 
   gsap.from(".top-nav", {
     y: -40,
     opacity: 0,
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Title
+
   gsap.from(".title", {
     opacity: 0,
     y: 30,
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Video
+
   gsap.from(".game-video", {
     opacity: 0,
     scale: 0.95,
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Text & info block
+ 
   gsap.from(".image-gallery h2, .image-gallery p, .info-block", {
     opacity: 0,
     y: 30,
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Screenshots
+
   gsap.from(".small-img", {
     opacity: 0,
     y: 40,
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clearProps: "transform"
   });
 
-  // Developer section
+
   gsap.from(".developer-section", {
     opacity: 0,
     y: 40,
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  // Scroll arrow pulse
+
   gsap.to("#scroll-arrow", {
     y: -8,
     repeat: -1,

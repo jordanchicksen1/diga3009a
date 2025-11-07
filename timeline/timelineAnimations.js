@@ -1,14 +1,13 @@
-// timelineAnimations.js
+
 console.log("timelineAnimations.js loaded!");
-// Wait for DOM to be loaded
+
 document.addEventListener("DOMContentLoaded", () => {
-  // GSAP + ScrollTrigger setup
+
 
   const items = document.querySelectorAll(".timeline-item");
 
   if (items.length === 0) return;
 
-  // Initial animation: fade + move up with stagger
   gsap.from(items, {
     opacity: 0,
     y: 50,
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 0.15
   });
 
-  // Scroll-triggered animation for items not yet visible
+ 
   items.forEach(item => {
     gsap.fromTo(
       item,
@@ -38,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
 
-  // Hover animation (GSAP)
+
   items.forEach(item => {
     item.addEventListener("mouseenter", () => {
       gsap.to(item, { scale: 1.05, boxShadow: "0 4px 15px rgba(0,0,0,0.3)", duration: 0.2 });

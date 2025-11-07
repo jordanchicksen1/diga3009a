@@ -1,8 +1,5 @@
-// homepageAnimations.js
 
-// Ensure GSAP is loaded
 document.addEventListener("DOMContentLoaded", () => {
-  // Animate the main title and description
   gsap.from("h1", {
     y: -50,
     opacity: 0,
@@ -18,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power3.out"
   });
 
-  // Animate nav buttons
   gsap.from(".nav-btn", {
     y: 20,
     opacity: 0,
@@ -28,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     delay: 0.6
   });
 
-  // Animate updates section
   gsap.from(".update", {
     y: 50,
     opacity: 0,
@@ -38,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     delay: 1.2
   });
 
-  // Optional hover effects for images using GSAP
+ 
   const updateImgs = document.querySelectorAll(".update-img");
   updateImgs.forEach(img => {
     img.addEventListener("mouseenter", () => {
@@ -49,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Optional hover effects for 'Read more' links
+
   const readMoreLinks = document.querySelectorAll(".read-more");
   readMoreLinks.forEach(link => {
     link.addEventListener("mouseenter", () => {

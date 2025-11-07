@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="studios-container">
-    <!-- Navbar -->
+  
    <div class="top-nav">
   <div class="nav-dots">
     <a href="../index.html" class="dot">Home</a>
@@ -18,10 +18,10 @@
   </div>
 </div>
 
-    <!-- Page Title -->
+   
     <h1>Games</h1>
 
-    <!-- Studios Grid -->
+    
     <div class="studios-grid">
       <a href="../games/relootedPage.html" class="studio-btn"><img src="../images/relooted.jpg" alt="Relooted"></a>
       <a href="../games/stickItToTheStickman.html" class="studio-btn"><img src="../images/stickman.jpg" alt="Stick It To The Stickman"></a>
@@ -46,7 +46,7 @@
       
     </div>
 
-    <!-- Scroll Arrow -->
+  
     <div class="scroll-arrow" id="scrollArrow">▼</div>
   </div>
 
@@ -58,20 +58,20 @@
     const scrollHeight = document.documentElement.scrollHeight;
     const windowHeight = window.innerHeight;
 
-    // If content fits on one screen, hide the arrow entirely
+    
     if (scrollHeight <= windowHeight + 5) {
       arrow.style.display = 'none';
       return;
     }
 
-    // If user can scroll down
+    
     if (scrollTop + windowHeight < scrollHeight - 10) {
       arrow.style.display = 'block';
       arrow.textContent = '▼';
       arrow.onclick = () =>
         window.scrollBy({ top: windowHeight, behavior: 'smooth' });
     }
-    // If user can scroll up
+  
     else if (scrollTop > 10) {
       arrow.style.display = 'block';
       arrow.textContent = '▲';
