@@ -1,10 +1,16 @@
-/<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timeline</title>
   <link rel="stylesheet" href="../timeline/timeline.css">
+<script src="timelineAnimations.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.16.0/gsap.min.js"></script>
+
+<!-- GSAP ScrollTrigger plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.16.0/ScrollTrigger.min.js"></script>
+
 </head>
 <body>
   
@@ -19,6 +25,7 @@
 
   <main class="timeline-container">
     <h1 class="timeline-title">Timeline</h1>
+
 
 <section class="timeline-year">
       <h2>Undated</h2>
@@ -92,7 +99,7 @@
   </main>
   <!-- Scroll Arrow -->
     <div class="scroll-arrow" id="scrollArrow">▼</div>
-  </div>
+  
 
   <script>
   const arrow = document.getElementById('scrollArrow');
@@ -130,5 +137,12 @@
   window.addEventListener('load', checkScroll);
   window.addEventListener('resize', checkScroll);
 </script>
+<!-- GSAP core -->
+
+
+<!-- Your animations -->
+
+
+
 </body>
 </html>
