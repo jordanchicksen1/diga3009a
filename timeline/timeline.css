@@ -1,0 +1,83 @@
+/* General layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9; /* light grey */
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+/* Container */
+.timeline-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.timeline-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Year section */
+.timeline-year {
+  margin-bottom: 40px;
+}
+
+.timeline-year h2 {
+  font-size: 1.8rem;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* Image grid */
+.timeline-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;                
+  justify-content: flex-start; 
+  align-items: center;
+  min-height: 200px;        
+}
+
+.timeline-item {
+  position: relative;
+  width: 200px;  /* fixed consistent width */
+  aspect-ratio: 1 / 0.8; /* or try 4 / 3 for wider tiles */
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+
+/* Hover effect */
+.timeline-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .timeline-title {
+    font-size: 2rem;
+  }
+
+  .timeline-year h2 {
+    font-size: 1.4rem;
+  }
+
+  .timeline-container {
+    padding: 10px;
+  }
+}
