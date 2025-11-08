@@ -54,4 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
       gsap.to(link, { scale: 1, duration: 0.2 });
     });
   });
+
+  gsap.from(".about", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  ease: "power3.out",
+  delay: 1.8
+});
+
 });
