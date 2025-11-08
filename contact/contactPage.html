@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <section class="contact-section">
+    <h1>Contact us</h1>
+    <form id="contactForm">
+      <label>
+        <span class="label-bubble">Name</span>
+        <input type="text" id="name" name="from_name" placeholder="Your name" required>
+      </label>
+
+      <label>
+        <span class="label-bubble">Email</span>
+        <input type="email" id="email" name="from_email" placeholder="Your email" required>
+      </label>
+
+      <label>
+        <span class="label-bubble">Suggestion</span>
+        <textarea id="message" name="message" placeholder="Your suggestion..." required></textarea>
+      </label>
+
+      <button type="submit" class="send-btn">Send</button>
+    </form>
+
+    <p id="statusMsg" class="status"></p>
+  </section>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
