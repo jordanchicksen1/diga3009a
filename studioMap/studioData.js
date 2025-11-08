@@ -7,7 +7,7 @@ const studios = [
     lng: 28.041,
     website: "https://nyamakop.com",
     games: ["Semblance", "Relooted"],
-    image: "images/nyamakop.png"
+    
   },
   {
     name: "Free Lives",
