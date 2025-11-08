@@ -40,3 +40,5 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.inOut"
   });
 });
+
+gsap.from(".search-container", { opacity: 0, y: 20, duration: 0.8, delay: 0.4, ease: "power2.out" });
