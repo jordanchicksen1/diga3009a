@@ -210,7 +210,6 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 
 
 
-/* Responsive layout */
 @media (max-width: 768px) {
   .container {
     padding: 15px;
@@ -284,10 +283,10 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   margin-bottom: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  background-color: #000; /* fallback color before video loads */
+  background-color: #000; 
 }
 
-/* Lightbox overlay */
+
 .lightbox {
   display: none;
   position: fixed;
@@ -304,14 +303,13 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   flex-direction: column;
 }
 
-/* Lightbox image */
+
 .lightbox img {
   max-width: 80%;
   max-height: 80%;
   border-radius: 10px;
 }
 
-/* Caption */
 #caption {
   margin-top: 15px;
   color: #f1f1f1;
@@ -319,7 +317,7 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
-/* Close button */
+
 .close {
   position: absolute;
   top: 20px;
@@ -330,7 +328,7 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
-/* Arrows */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -358,17 +356,59 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .info-table {
-  position: relative;       /* reset from default */
-  left: 0;                  /* anchor to the left */
-  align-self: flex-start;   /* move the block itself to the left in flexbox */
-  text-align: left;         /* align text inside to the left */
-  width: fit-content;       /* only as wide as the content */
-  margin-left: 0;           /* ensure no unwanted indentation */
+  position: relative;       
+  left: 0;                 
+  align-self: flex-start;  
+  text-align: left;         
+  width: fit-content;     
+  margin-left: 0;           
 }
 
 .info-block {
-  width: 100%;         /* change as desired */
+  width: 100%;         
   text-align: left;
   margin-inline-start: 0em;
   margin-inline-end: 0em;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 700px) {
+  .nav-dots {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  .nav-dots.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dot {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
 }

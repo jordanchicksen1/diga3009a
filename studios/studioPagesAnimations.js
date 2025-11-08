@@ -65,3 +65,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navDots = document.getElementById("nav-dots");
+
+  if (hamburger && navDots) {
+    hamburger.addEventListener("click", () => {
+      const isOpen = navDots.classList.toggle("show");
+
+      
+      if (isOpen) {
+        gsap.fromTo(
+          navDots,
+          { opacity: 0, y: -10 },
+          { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }
+        );
+      }
+    });
+  }
+});
+
+
