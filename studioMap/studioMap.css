@@ -13,8 +13,53 @@ h1 {
 }
 
 #map {
-  width: 90%;
-  height: 600px;
+  width: 80%;
+  height: 500px;
   border: 2px solid #333;
   border-radius: 10px;
 }
+
+.top-nav {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  z-index: 100;
+}
+
+.nav-dots {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dot {
+  min-width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ccc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  text-decoration: none; 
+  left: 90%
+}
+
+.dot:hover {
+  background-color: #999;
+}
+
+.dot.active {
+  background-color: #000;
+  color: #fff;
+}
+
+

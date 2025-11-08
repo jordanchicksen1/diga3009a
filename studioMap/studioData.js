@@ -28,7 +28,7 @@ const studios = [
   {
     name: "Vetkoek Studios",
     city: "Rosebank, Johannesburg",
-    lat: -25.140,
+    lat: -26.140,
     lng: 28.041,
     website: "https://vetkoekstudios.co.za/",
     games: ["Taxi Ranked", "Gnome Game"]
