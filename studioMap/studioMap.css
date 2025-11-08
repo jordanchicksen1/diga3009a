@@ -23,7 +23,7 @@ h1 {
   position: fixed;
   top: 20px;
   right: 0px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .nav-dots {
@@ -104,4 +104,30 @@ h1 {
   }
 }
 
+footer {
+  margin-top: 30px;
+
+  text-align: center;
+  padding: 40px 0;    
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none; /
+}
+  
+
+
+.contact-btn:hover {
+  background-color: #bfbfbf;
+  transform: scale(1.05);
+}
 
