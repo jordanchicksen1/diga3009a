@@ -10,6 +10,12 @@ body {
   min-height: 100vh;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
 
 .studios-container {
   width: 90%;
@@ -17,9 +23,9 @@ body {
   background-color: #707070;
   border-radius: 25px;
   padding: 20px;
-  position: relative;
+  margin: 0 auto; /* center horizontally */
+  flex: 1;         /* take available space, push footer down */
 }
-
 
 .top-nav {
   position: fixed;
@@ -82,18 +88,14 @@ h1 {
   align-items: center;
 }
 
-.studio-btn {
-  width: 200px;
-  height: 150px;
+.studios-container {
+  flex: 1;             /* takes up remaining space to push footer down */
+  width: 90%;
+  max-width: 800px;
+  background-color: #707070;
   border-radius: 25px;
-  overflow: hidden;
-  border: none;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 20px;
+  margin: 0 auto;   
 }
 
 .studio-btn:hover {
@@ -215,4 +217,39 @@ h1 {
     justify-content: flex-start;
     padding-left: 15px;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #000;
+}
+
+
+
+.contact-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none; /
+}
+  
+
+
+.contact-btn:hover {
+  background-color: #bfbfbf;
+  transform: scale(1.05);
+
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  min-height: 100vh;      /* full viewport height */
 }

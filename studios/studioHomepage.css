@@ -1,24 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #333333; 
+  background-color: #333333;
   font-family: Arial, sans-serif;
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+  flex-direction: column; 
+  min-height: 100vh; 
 }
 
-
 .studios-container {
+  flex: 1; 
   width: 90%;
   max-width: 800px;
   background-color: #333333;
   border-radius: 25px;
   padding: 20px;
   position: relative;
+  margin: 0 auto;
 }
+
 
 
 .top-nav {
@@ -212,4 +213,31 @@ h1 {
     justify-content: flex-start;
     padding-left: 15px;
   }
+}
+
+footer {
+  margin-top: auto; 
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+.contact-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none; /
+}
+  
+
+
+.contact-btn:hover {
+  background-color: #bfbfbf;
+  transform: scale(1.05);
 }
