@@ -1,4 +1,4 @@
-// Initialize EmailJS
+
 (function() {
   emailjs.init({
     publicKey: "iVO6VsyBs1f2TcEE3",
@@ -14,13 +14,13 @@ form.addEventListener("submit", function (event) {
   statusMsg.textContent = "Sending...";
 
   const serviceID = "service_wg65jnf";
-  const suggestionTemplateID = "template_wrydue4"; // the email sent to you
-  const confirmTemplateID = "template_kx1z29n"; // the email sent to the user
+  const suggestionTemplateID = "template_wrydue4"; 
+  const confirmTemplateID = "template_kx1z29n"; 
 
-  // Send first email (to you)
+  
   emailjs.sendForm(serviceID, suggestionTemplateID, this)
     .then(() => {
-      // After success, send confirmation email to the user
+     
       return emailjs.sendForm(serviceID, confirmTemplateID, this);
     })
     .then(() => {
@@ -35,9 +35,9 @@ form.addEventListener("submit", function (event) {
 
 
 
-// Wait for DOM to be ready
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Fade + slide-in animation for main elements
+  
   gsap.from(".top-nav", { 
     y: -30, 
     opacity: 0, 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power3.out" 
   });
 
-  // Add a slight stagger effect for inputs
+  
   gsap.from("input, textarea, .send-btn", {
     opacity: 0,
     y: 20,
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Input focus animation
+
 const inputs = document.querySelectorAll("input, textarea");
 inputs.forEach(input => {
   input.addEventListener("focus", () => {
@@ -84,7 +84,7 @@ inputs.forEach(input => {
   });
 });
 
-// Send button hover animation
+
 const sendBtn = document.querySelector(".send-btn");
 sendBtn.addEventListener("mouseenter", () => {
   gsap.to(sendBtn, { scale: 1.05, duration: 0.2, ease: "back.out(2)" });
